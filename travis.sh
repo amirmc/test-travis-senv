@@ -29,8 +29,6 @@ ocaml -version
 echo OPAM versions
 opam --version
 opam --git-version
-echo Mirage version
-mirage --version
 
 # travis-senv test
 travis-senv decrypt > $SSH_DEPLOY_KEY
