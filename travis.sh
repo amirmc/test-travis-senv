@@ -3,11 +3,8 @@
 # env variables
 OPAM_DEPENDS="travis-senv"
 SSH_DEPLOY_KEY=~/.ssh/id_rsa
- 
-case "$OCAML_VERSION,$OPAM_VERSION" in
-4.01.0,1.1.0) ppa=avsm/ocaml41+opam11 ;;
-*) echo Unknown $OCAML_VERSION,$OPAM_VERSION; exit 1 ;;
-esac
+
+ppa=avsm/ocaml41+opam11
 
 # set up machine
 echo "yes" | sudo add-apt-repository ppa:$ppa
